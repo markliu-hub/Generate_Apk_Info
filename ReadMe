@@ -1,0 +1,232 @@
+Started by user Auto Build System
+[EnvInject] - Loading node environment variables.
+Building remotely on 10.58.57.70 (Tools-BJ-CI) in workspace /home/letv/jenkins_slave/workspace/Generate_Apk_Info
+No emails were triggered.
+[Generate_Apk_Info] $ /bin/bash /tmp/hudson5644974588272708907.sh
++ scp letv@imgrepo-cnbj.devops.letv.com:/home/letv/ci_share/build_script/get_ci_scripts.sh .get_ci_scripts.sh
++ source .get_ci_scripts.sh -w /home/letv/jenkins_slave/workspace/Generate_Apk_Info -m mobile_scripts
+++ export CIB_S_WORKSPACE=/home/letv/jenkins_slave/workspace/Generate_Apk_Info
+++ CIB_S_WORKSPACE=/home/letv/jenkins_slave/workspace/Generate_Apk_Info
+++ export CIB_S_TOOL_LOCAL=/home/letv/jenkins_slave/workspace/Generate_Apk_Info/.ci_scripts
+++ CIB_S_TOOL_LOCAL=/home/letv/jenkins_slave/workspace/Generate_Apk_Info/.ci_scripts
+++ export CIB_S_CI_CFG=/home/letv/jenkins_slave/workspace/Generate_Apk_Info/.ci_scripts/ci_script_cfg
+++ CIB_S_CI_CFG=/home/letv/jenkins_slave/workspace/Generate_Apk_Info/.ci_scripts/ci_script_cfg
+++ export CIB_S_DOWNLOAD_TOOLS=true
+++ CIB_S_DOWNLOAD_TOOLS=true
+++ export CIB_S_TOOL_GIT_URL=athenar:tools/ci/build_script
+++ CIB_S_TOOL_GIT_URL=athenar:tools/ci/build_script
+++ export CIB_S_TOOL_GIT_BRANCH=r1.0
+++ CIB_S_TOOL_GIT_BRANCH=r1.0
+++ export CIB_S_TOOL_MODUEL_NAME=mobile_scripts
+++ CIB_S_TOOL_MODUEL_NAME=mobile_scripts
+++ getopts :w:u:b:m:nh opt
+++ case "${opt}" in
+++ export CIB_S_WORKSPACE=/home/letv/jenkins_slave/workspace/Generate_Apk_Info
+++ CIB_S_WORKSPACE=/home/letv/jenkins_slave/workspace/Generate_Apk_Info
+++ export CIB_S_TOOL_LOCAL=/home/letv/jenkins_slave/workspace/Generate_Apk_Info/.ci_scripts
+++ CIB_S_TOOL_LOCAL=/home/letv/jenkins_slave/workspace/Generate_Apk_Info/.ci_scripts
+++ export CIB_S_CI_CFG=/home/letv/jenkins_slave/workspace/Generate_Apk_Info/.ci_scripts/ci_script_cfg
+++ CIB_S_CI_CFG=/home/letv/jenkins_slave/workspace/Generate_Apk_Info/.ci_scripts/ci_script_cfg
+++ getopts :w:u:b:m:nh opt
+++ case "${opt}" in
+++ export CIB_S_TOOL_MODUEL_NAME=mobile_scripts
+++ CIB_S_TOOL_MODUEL_NAME=mobile_scripts
+++ getopts :w:u:b:m:nh opt
+++ [[ true == \t\r\u\e ]]
+++ rm -rf /home/letv/jenkins_slave/workspace/Generate_Apk_Info/.ci_scripts
+++ git clone athenar:tools/ci/build_script -b r1.0 /home/letv/jenkins_slave/workspace/Generate_Apk_Info/.ci_scripts
+Cloning into '/home/letv/jenkins_slave/workspace/Generate_Apk_Info/.ci_scripts'...
+Total 2651 (delta 1427), reused 2601 (delta 1427)
+++ source /home/letv/jenkins_slave/workspace/Generate_Apk_Info/.ci_scripts/common/common_function.sh
++++ SG_CDN_OTA_JOB=http://cia.devops.letv.com/job/Tool_SCM_Upload_To_CDN/build
++++ SG_AUTOBUILD_USERNAME=********
++++ SG_AUTOBUILD_PASSWORD=********
++++ SG_MYSQL_DB=android_build
++++ SG_MYSQL_USER=********
++++ SG_MYSQL_PWD=********
++++ SG_MYSQL_HOST=ci.le.com
++++ SG_MYSQL_PORT=3306
++++ SG_MYSQL_DB_INFO=' -u******** -p******** -hci.le.com -P3306 --database android_build'
++++ SG_NEW_MYSQL_DB_INFO=' -u******** -p******** -hci.le.com -P3306 --database lingjing'
++++ SG_LEEC0_JIRA=http://jira.letv.cn
++++ SG_LEECO_VERSION_STR_FIELD_ID=customfield_14810
++++ CIB_S_TOOL_ERR_RECEIVER=scm-bp@le.com,scm-rd@le.com
++++ CIB_S_BUILD_ERR_RECEIVER_TOOL=luohanbin@le.com,zhongshan@le.com
+++ [[ -f /home/letv/jenkins_slave/workspace/Generate_Apk_Info/.ci_scripts/mobile_scripts/function.sh ]]
+++ source /home/letv/jenkins_slave/workspace/Generate_Apk_Info/.ci_scripts/mobile_scripts/function.sh
++ cd /home/letv/jenkins_slave/workspace/Generate_Apk_Info/.ci_scripts/mobile_scripts
++ bash -x get_apk_info.sh '\\imgrepo-cnbj.devops.letv.com\dailybuild\SuperTV\gae\cn\letv_gae_cvt\daily\20200430\x655_gae_V3601RCN02C000397B04305D_20200430_152418_cibn_user' '' zh-CN
+++ dirname get_apk_info.sh
++ cd .
++ source common_function.sh
+++ SG_CDN_OTA_JOB=http://cia.devops.letv.com/job/Tool_SCM_Upload_To_CDN/build
+++ SG_AUTOBUILD_USERNAME=********
+++ SG_AUTOBUILD_PASSWORD=********
+++ SG_MYSQL_DB=android_build
+++ SG_MYSQL_USER=********
+++ SG_MYSQL_PWD=********
+++ SG_MYSQL_HOST=ci.le.com
+++ SG_MYSQL_PORT=3306
+++ SG_MYSQL_DB_INFO=' -u******** -p******** -hci.le.com -P3306 --database android_build'
+++ SG_NEW_MYSQL_DB_INFO=' -u******** -p******** -hci.le.com -P3306 --database lingjing'
+++ SG_LEEC0_JIRA=http://jira.letv.cn
+++ SG_LEECO_VERSION_STR_FIELD_ID=customfield_14810
+++ CIB_S_TOOL_ERR_RECEIVER=scm-bp@le.com,scm-rd@le.com
+++ CIB_S_BUILD_ERR_RECEIVER_TOOL=luohanbin@le.com,zhongshan@le.com
++ cd /home/letv/jenkins_slave/workspace/Generate_Apk_Info/.ci_scripts/mobile_scripts
+++ dirname get_apk_info.sh
++ cd .
++ source function.sh
++ cd /home/letv/jenkins_slave/workspace/Generate_Apk_Info/.ci_scripts/mobile_scripts
++ CIB_INPUT_PATH_1='\\imgrepo-cnbj.devops.letv.com\dailybuild\SuperTV\gae\cn\letv_gae_cvt\daily\20200430\x655_gae_V3601RCN02C000397B04305D_20200430_152418_cibn_user'
++ CIB_INPUT_PATH_2=
++ CIB_LANG=zh-CN
++ SG_WORKSPACE=/home/letv/jenkins_slave/workspace/Generate_Apk_Info/work_dir
++ SG_RELEASE_SMB_SUB_PATH=
++ SG_RELEASE_SMB_SERVER=
++ SG_RELEASE_SERVER=
++ SG_RELEASE_SUB_PATH=
++ SG_OUTPUT_FILE=
++ SG_RECORD_FILE=/home/letv/jenkins_slave/workspace/Generate_Apk_Info/work_dir/compare.txt
++ SG_PRODUCT=
++ SG_OUTPUT_EXIST_FLAG=
++ SG_COMPARE_FLAG=
++ SG_SYSTEM_IMAGE_FLAG=
++ SG_MTK_FLAG=
++ SG_TV_FLAG=
++ '[' -z zh-CN ']'
++ '[' -z '\\imgrepo-cnbj.devops.letv.com\dailybuild\SuperTV\gae\cn\letv_gae_cvt\daily\20200430\x655_gae_V3601RCN02C000397B04305D_20200430_152418_cibn_user' ']'
++ '[' -n '\\imgrepo-cnbj.devops.letv.com\dailybuild\SuperTV\gae\cn\letv_gae_cvt\daily\20200430\x655_gae_V3601RCN02C000397B04305D_20200430_152418_cibn_user' ']'
++ '[' -n '' ']'
++ rm '*.txt' '*.log'
+rm: cannot remove ‘*.txt’: No such file or directory
+rm: cannot remove ‘*.log’: No such file or directory
++ clean_env
++ local l_mnt_dir=
+++ mount
+++ grep -Eo 'on\s*/[^ ]*'
+++ grep mnt_dir
+++ cut -d ' ' -f 2
++ l_mnt_dir=
++ '[' -n '' ']'
++ mkdir -p /home/letv/jenkins_slave/workspace/Generate_Apk_Info/work_dir
++ cd /home/letv/jenkins_slave/workspace/Generate_Apk_Info/work_dir
++ rm '*.img' system.img.ext4 '*.zip' '*.log' build.prop
+rm: cannot remove ‘*.img’: No such file or directory
+rm: cannot remove ‘system.img.ext4’: No such file or directory
+rm: cannot remove ‘*.zip’: No such file or directory
+rm: cannot remove ‘*.log’: No such file or directory
+rm: cannot remove ‘build.prop’: No such file or directory
++ rm -rf mnt_dir SYSTEM VENDOR tmp Bins
++ '[' '' '!=' yes ']'
++ rm '*.txt'
+rm: cannot remove ‘*.txt’: No such file or directory
++ return 0
++ ERRORLINE=540
++ exit_err 0 'failed to clean enviroment'
++ local L_LAST_STATUS=0
++ shift 1
++ [[ 0 == 0 ]]
++ return 0
++ for input_path in '${CIB_INPUT_PATH_1}' '${CIB_INPUT_PATH_2}'
++ get_version_path '\\imgrepo-cnbj.devops.letv.com\dailybuild\SuperTV\gae\cn\letv_gae_cvt\daily\20200430\x655_gae_V3601RCN02C000397B04305D_20200430_152418_cibn_user'
++ local 'l_input=\\imgrepo-cnbj.devops.letv.com\dailybuild\SuperTV\gae\cn\letv_gae_cvt\daily\20200430\x655_gae_V3601RCN02C000397B04305D_20200430_152418_cibn_user'
++ local l_input_update=
++ local l_release_server=
++ local l_release_sub_path=
+++ echo '\\imgrepo-cnbj.devops.letv.com\dailybuild\SuperTV\gae\cn\letv_gae_cvt\daily\20200430\x655_gae_V3601RCN02C000397B04305D_20200430_152418_cibn_user'
+++ grep '^\\'
++ '[' -n '\\imgrepo-cnbj.devops.letv.com\dailybuild\SuperTV\gae\cn\letv_gae_cvt\daily\20200430\x655_gae_V3601RCN02C000397B04305D_20200430_152418_cibn_user' ']'
++ l_input_update=//imgrepo-cnbj.devops.letv.com/dailybuild/SuperTV/gae/cn/letv_gae_cvt/daily/20200430/x655_gae_V3601RCN02C000397B04305D_20200430_152418_cibn_user
++ SG_RELEASE_SMB_SUB_PATH=SuperTV/gae/cn/letv_gae_cvt/daily/20200430/x655_gae_V3601RCN02C000397B04305D_20200430_152418_cibn_user
++ SG_RELEASE_SMB_SERVER=//imgrepo-cnbj.devops.letv.com/dailybuild
++ l_release_server=imgrepo-cnbj.devops.letv.com/dailybuild
++ SG_RELEASE_SERVER=imgrepo-cnbj.devops.letv.com
++ l_release_sub_path=dailybuild/SuperTV/gae/cn/letv_gae_cvt/daily/20200430/x655_gae_V3601RCN02C000397B04305D_20200430_152418_cibn_user
+++ echo //imgrepo-cnbj.devops.letv.com/dailybuild/SuperTV/gae/cn/letv_gae_cvt/daily/20200430/x655_gae_V3601RCN02C000397B04305D_20200430_152418_cibn_user
+++ grep /old_dailybuild/
++ '[' -n '' ']'
++ SG_RELEASE_SUB_PATH=/home/android/share/dailybuild/SuperTV/gae/cn/letv_gae_cvt/daily/20200430/x655_gae_V3601RCN02C000397B04305D_20200430_152418_cibn_user
++ return 0
++ ERRORLINE=548
++ exit_err 0 'Wrong input path \\imgrepo-cnbj.devops.letv.com\dailybuild\SuperTV\gae\cn\letv_gae_cvt\daily\20200430\x655_gae_V3601RCN02C000397B04305D_20200430_152418_cibn_user is provided'
++ local L_LAST_STATUS=0
++ shift 1
++ [[ 0 == 0 ]]
++ return 0
++ check_output_exist
++ local l_build_prop=
++ local l_build_id=
++ local l_build_platform=
++ local l_output_exist_flag=
++ cd /home/letv/jenkins_slave/workspace/Generate_Apk_Info/work_dir
++ smbclient //imgrepo-cnbj.devops.letv.com/dailybuild -N -D SuperTV/gae/cn/letv_gae_cvt/daily/20200430/x655_gae_V3601RCN02C000397B04305D_20200430_152418_cibn_user/Bins -c 'ls build.prop'
+WARNING: The "syslog" option is deprecated
+Domain=[WORKGROUP] OS=[Windows 6.1] Server=[Samba 4.3.11-Ubuntu]
+cd \SuperTV\gae\cn\letv_gae_cvt\daily\20200430\x655_gae_V3601RCN02C000397B04305D_20200430_152418_cibn_user\Bins\: NT_STATUS_OBJECT_NAME_NOT_FOUND
++ return 1
++ ERRORLINE=552
++ exit_err 1 'failed to get file'
++ local L_LAST_STATUS=1
++ shift 1
++ [[ 1 == 0 ]]
++ [[ 552 == '' ]]
+++ basename get_apk_info.sh
++ local 'L_PLACE=[get_apk_info.sh 552]'
++ echo '[CI_BUILD_SYSTEM]' '[ERROR]' '[get_apk_info.sh' '552]' : failed to get file
+[CI_BUILD_SYSTEM] [ERROR] [get_apk_info.sh 552] : failed to get file
++ send_email_for_tool_error
++ [[ -f /home/letv/jenkins_slave/workspace/Generate_Apk_Info/.ci_scripts/common/send_mail.py ]]
++ local L_CMD=/home/letv/jenkins_slave/workspace/Generate_Apk_Info/.ci_scripts/common/send_mail.py
++ [[ '' != '' ]]
++ [[ http://cia.devops.letv.com/job/Generate_Apk_Info/6357/ != '' ]]
++ local URL=http://cia.devops.letv.com/job/Generate_Apk_Info/6357/
++ local NAME=Generate_Apk_Info
++ local 'L_TITLE=[Tools Error] [Generate_Apk_Info]'
++ local HTML=/home/letv/jenkins_slave/workspace/Generate_Apk_Info/work_dir/.html
++ rm -rf /home/letv/jenkins_slave/workspace/Generate_Apk_Info/work_dir/.html
+++ /sbin/ifconfig
+++ grep -o 'inet addr:10\.[0-9]\{1,3\}.[0-9]\{1,3\}.[0-9]\{1,3\}'
+++ grep -oE '[0-9.]*'
+++ whoami
++ echo '
+	<html>
+	<head><meta content="text/html" charset="UTF-8"></head>
+	<body>
+	<p>Dears:</p>
+	<p></p>
+	<p>The tool has some error. Please fix it!</p>
+	<p>Build Job Name: <a href="">  </a></p>
+	<p></p>
+	<p>JOB URL: http://cia.devops.letv.com/job/Generate_Apk_Info/6357/</p>
+	<p>Host: 10.58.57.70</p>
+	<p>Script: get_apk_info.sh </p>
+	<p>Running User: letv </p>
+	<p>Running Folder: /home/letv/jenkins_slave/workspace/Generate_Apk_Info/work_dir </p>
+	<p></p>
+	<p>BRs</p>
+	<p>Auto Build System</p>
+	</body>
+	</html>
+	'
++ local L_RECEIVE=scm-bp@le.com,scm-rd@le.com
++ python /home/letv/jenkins_slave/workspace/Generate_Apk_Info/.ci_scripts/common/send_mail.py -c scm-bp@le.com,scm-rd@le.com -t '[Tools Error] [Generate_Apk_Info]' -f /home/letv/jenkins_slave/workspace/Generate_Apk_Info/work_dir/.html
+Email context type: html
+Receiver:scm-bp@le.com,scm-rd@le.com
+Cclist:
+Mail title:[Tools Error] [Generate_Apk_Info]
+['scm-bp@le.com', 'scm-rd@le.com']
+Sending Mail...
+Send Mail: Success
++ return 0
++ test '' == true
++ test '' == true
++ exit 1
+Build step 'Execute shell' marked build as failure
+[BFA] Scanning build for known causes...
+[BFA] No failure causes found
+[BFA] Done. 0s
+Email was triggered for: Failure - Any
+Sending email for trigger: Failure - Any
+Sending email to: scm-letv@le.com ********@le.com
+Finished: FAILURE
